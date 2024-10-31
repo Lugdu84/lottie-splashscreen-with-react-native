@@ -12,7 +12,9 @@ export default function App() {
 	}
 	return (
 		<View style={styles.container}>
-			<Animated.Text entering={ZoomIn.duration(2000)}>
+			<Animated.Text
+				entering={ZoomIn.duration(2000)}
+				style={styles.text}>
 				Netfix Splash Screen !!
 			</Animated.Text>
 		</View>
@@ -25,5 +27,8 @@ const styles = StyleSheet.create({
 		backgroundColor: '#fff',
 		alignItems: 'center',
 		justifyContent: 'center',
+	},
+	text: {
+		fontSize: 20,
 	},
 });
